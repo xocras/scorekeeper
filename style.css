@@ -1,0 +1,132 @@
+html {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+main {
+  max-width: 450px;
+  min-width: 350px;
+  width: 40%;
+}
+
+h1 {
+  margin: 0;
+  padding: 1em;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  font-size: 1em;
+}
+
+p {
+  margin: 0;
+  font-weight: 200;
+}
+
+button {
+  border: 0;
+
+  color: white;
+
+  flex: 1 1 0;
+
+  padding: 1em 0;
+
+  opacity: 0.85;
+  transition: opacity 0.3s;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+select {
+  background-color: white;
+  border: solid 1px rgb(90, 90, 90);
+  border-radius: 16px;
+
+  margin: 0 8px;
+}
+
+option {
+  text-align: center;
+}
+
+.card {
+  margin: 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  padding: 1em;
+}
+
+.cover {
+  border-radius: inherit;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  width: 100%;
+  height: 250px;
+  display: block;
+
+  object-fit: cover;
+}
+
+.score {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.max-score {
+  margin-top: 16px;
+  font-weight: 700;
+  border-radius: inherit;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.buttons {
+  display: flex;
+}
+
+#p1-btn {
+  border-bottom-left-radius: 16px;
+  background-color: rgb(100, 215, 100);
+}
+
+#p2-btn {
+  background-color: rgb(100, 100, 235);
+}
+
+#reset {
+  border-bottom-right-radius: 16px;
+  background-color: rgb(235, 100, 100);
+}
+
+#p1-btn:disabled,
+#p2-btn:disabled,
+#reset:disabled {
+  opacity: 0.5;
+  background-color: rgb(90, 90, 90);
+}
+
+.winner {
+  color: rgb(100, 215, 100);
+}
+
+.loser {
+  color: rgb(235, 100, 100);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Keeper</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Additional CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <img class="cover" alt="Red and brown wooden table tennis racket" />
+      <h1>Ping Pong Score Keeper</h1>
+      <section class="container">
+        <div class="score">
+          <span id="p1-score">0</span> to <span id="p2-score">0</span>
+        </div>
+        <p>Use the buttons below to update the score.</p>
+        <div class="max-score">
+          Playing To
+          <select name="playing-to" id="playing-to">
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+      </section>
+      <div class="buttons">
+        <button id="p1-btn">+1 Player One</button>
+        <button id="p2-btn">+1 Player Two</button>
+        <button id="reset">Reset</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
